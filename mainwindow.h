@@ -15,6 +15,11 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+protected:
+    void initData();
+
+    void saveResourceFile(const QString &fileName);
+
 private:
     Ui::MainWindow *ui;
 };
