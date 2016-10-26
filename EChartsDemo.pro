@@ -15,14 +15,20 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    echartsobject.cpp \
+    echartsoption.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    echartsobject.h \
+    echartsoption.h
 
 FORMS    += mainwindow.ui
 
 DISTFILES += \
-    index.html
+    index.html \
+    echarts.min.js \
+    test.js \
 
 RESOURCES += \
-    echarts.qrc
+    echarts.qrc \

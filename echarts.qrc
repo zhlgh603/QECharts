@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>echarts.min.js</file>
         <file>index.html</file>
+        <file>test.js</file>
     </qresource>
 </RCC>
