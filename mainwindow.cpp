@@ -177,6 +177,10 @@ void MainWindow::echartsInit(QWebView *view, QString divName, QString chartName)
                                    "var tmpChart = echarts.init(document.getElementById('tmpDiv'));;"
                                    "var tmpChartOption = %1;"
                                    "tmpChart.setOption(tmpChartOption);"
+                                   "setTimeout(function(){"
+                                   "window.onresize=function(){"
+                                   "tmpChart.resize();}"
+                                   "},200);"
                                    "").arg(jOption);
         jsInitDiv = jsInitDiv.replace("tmpDiv", divName);
         jsInitDiv = jsInitDiv.replace("tmpChart", chartName);
